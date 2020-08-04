@@ -88,6 +88,9 @@ class SignalGenerator_API : public ApiObject
     Q_PROPERTY(QList<double> buffer_phase
            READ getBufferPhase WRITE setBufferPhase)
 
+        Q_PROPERTY(QList<int> line_thickness
+                   READ getLineThickness WRITE setLineThickness)
+
 
 public:
 	bool running() const;
